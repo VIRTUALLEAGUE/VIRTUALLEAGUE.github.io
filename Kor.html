@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>온라인 게임의 혁명, 버추얼 리그</title>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<meta property="og:url" content="https://virtualleague.github.io/Kor.html">
+		<meta property="og:title" content="Virtual League">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="images/N_VL009.png">
+		<meta property="og:description" content="차세대 축구게임 프로젝트 VL">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<title>CountAPI</title>
+		<script src="app.js" defer></script>
+		<script src="https://api.countapi.xyz/hit/VL_Release/visits?callback=countapi" async></script>
+		<script src="https://kit.fontawesome.com/2ba9822c89.js" crossorigin="anonymous"></script>
+	</head>
+
+	
+
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div class="box-shortcut">
+				<ui class="menu">
+					<li><a href="" title="" onclick="location.href= 'gallery.html';">갤러리</a> </li>
+				</ui>
+				<button id="sub_top" class="btn-scroll-top" title="">응원하기</button>
+			</div>
+
+				<section id="header">
+					<div id="001" class="container">
+
+						<!-- Logo -->
+							<h2 style="display: inline; font-size: 50px;">게임을 통해 새로운 축구 문화를 만들고 싶습니다</h2>
+							<h3 >저와 함께 VIRTUAL LEAGUE를 만들어 갈 회사를 찾습니다</h3>
+							<p><br></p>
+							<h1 style="font-size: 50px;">찾아주신 <span id="visits"> </span>분께 감사드립니다.<br><br></h1>
+
+							<script>
+								setTimeout(function() {
+									$("h1").append(' ');
+								}, 200)
+							</script>
+
+							<button id= "btn" onclick="clicked()">응원하기!</button>
+							<script>
+								function clicked() {
+									var xhr = new XMLHttpRequest();
+									xhr.open("GET", "https://api.countapi.xyz/hit/VL_Release.com/awesomeclick");
+									xhr.responseType = "json";
+									xhr.onload = function() {
+										$("h1").html(document.getElementById('visits').innerText = this.response.value);
+										$("h1").append("명이 서포트 중 입니다.");
+										$(btn).hide();
+										$(sub_top).hide();
+									}
+									xhr.send();
+								}
+								</script>
+					</div>
+				</section>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div id="002" class="container">
+						<p>어릴 적 축구 선수의 꿈<br />
+						메타버스에서 대신 이루다</p>
+						<p style="font-size: 20px;"><br><strong>Virtual League(이하 VL)</strong>은 스포츠와 메타버스 장르의 게임으로 현실의 축구가 아닌, 여러분이 주인공인 게임입니다.<br><br>
+						많은 관중 속에서 화려한 골을 넣는 상상을 해보셨나요?<br>
+						그라운드의 주인공이 되는 상상을 해보셨나요?<br><br>
+						이제 그 꿈을 VL을 통해 이룰 수 있습니다.<br>
+						미래의 새로운 축구 문화를 개척할 VL을 소개합니다.<br>
+						</p>
+					</div>
+				</section>
+
+			<!-- ABT_VL -->
+				<section id="ABT_VL">
+					<div id="003" class="container">
+						<header>
+							<h2>VL 만의 콘텐츠</h2>
+						</header>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#!" class="image featured"><img src="images/N_VL001_cp.jpg" onclick="window.open(this.src)" alt="" /></a>
+										</script>
+										<header>
+											<h2>경기 관람 콘텐츠</h2>
+										</header>
+										<p style="font-size: 20px;">VL의 모든 구단은 현실 세계의 기업이 운영합니다.
+											구단 입단에 성공한 플레이어의 캐릭터로 구성된 3D 축구 경기 애니메이션이 제작되며
+											PC 및 VR을 통해 메타버스 환경에 접속하여 가상 스타디움 내 경기를 관람하거나
+											OTT 플랫폼을 통해 경기 중계를 시청할 수 있습니다.<br>
+											자신 혹은 주변인의 캐릭터가 수많은 관중 속에서 경기를 치르는 모습, 기대되지 않나요?
+											VL 경기를 뛸 수 있는 특권은 구단 입단에 성공한 캐릭터에게 주어지며, 이 기회는 누구에게나 열려있습니다.<br><br>
+											3D와 AI를 사용해 제공하는 축구 경기,<br> 잠시 후 자세히 설명드리겠습니다.</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#!" class="image featured"><img src="images/N_VL002_cp.jpg" onclick="window.open(this.src)" alt="" /></a>
+										<header>
+											<h2>캐릭터 육성 콘텐츠</h2>
+										</header>
+										<p style="font-size: 20px;">VL은 일반적인 축구 게임과 같이 축구 팀을 결성해 PvP 대결을 즐길 수 있습니다.
+											뿐만 아니라, 퀘스트 및 시나리오 등을 통해 여러분의 캐릭터를 육성시켜 능력치를 높일 수 있습니다. 
+											여러분이 VL에 입단하고 싶다면, 다른 플레이어보다 더 높은 능력치를 가져야 할 것입니다.<br><br>
+
+											또한, VL는 현실에서의 경험을 중요시합니다.
+											만일 여러분이 현실에서 선수 생활을 하였고 그것을 증명할 수 있다면 해당 포지션의 중요 능력치에 일부 가산점을 받을 수 있습니다</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#!" class="image featured"><img src="images/N_VL003_cp.jpg" onclick="window.open(this.src)" alt="" /></a>
+										<header>
+											<h2>입단 및 이적 콘텐츠</h2>
+										</header>
+										<p style="font-size: 20px;">캐릭터를 육성시켜 일정 능력치 이상이라면, 여러분은 VL 입단 신청을 할 수 있습니다.
+											이적시장에 여러분의 캐릭터를 등록시키면, 현실 기업이 운영하는 많은 구단에서 여러분의 능력치와 스토리 등을 기반으로 입단 여부를 결정할 것입니다.
+											입단 계약시, 여러분은 구단으로부터 계약금을 받아 실제 수익을 창출할 수 있다는 장점이 있습니다.<br><br>
+
+											입단 후, 주전으로 발탁 시 여러분의 캐릭터는 소속 구단의 경기를 보러 온 관중들 속에서 경기를 뛰는 모습을 보일 수 있습니다.
+											</p>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- ABT_FBGAME-->
+				<section id="ABT_FBGAME">
+					<div id="004" class="container">
+
+						<!-- Logo -->
+						<p><br><br><br></p>
+							<h2 style="display: inline; font-size: 50px;">VL의 축구 경기란?</h2>
+							<h3 >메타버스 공간에서 제공하는 축구 경기는 AI와 3D로 제작됩니다.</h3>
+							<p><br></p>
+
+							<div style="text-align: center;">
+								<img src="/icon/AI.png">
+								<p style="text-align: center;">축구 경기 또는 축구 게임 데이터를 <U>*AI NLP</U> 모델의 트레이닝 데이터로 학습시킵니다.<br>
+									학습을 통해 AI 모델은 두 팀간의 경기가 펼쳐질 때의 경기 시나리오를 다양한 데이터를 기반으로 예측할 수 있습니다.<br></p>
+								<p style="text-align:center; font-size: smaller;"> AI NLP : 자연어 처리 모델, 기존의 텍스트 데이터를 기반으로 주어진 TASK 내에서 단어 혹은 문장을 예측합니다.<br>
+								예를 들어, 해리포터 전권을 학습시켜 AI가 해리포터 신작을 집필한 사례 등이 있습니다.</p>
+								<img src="/icon/Arrow.png">
+								<p></p>
+								<img src="/icon/Data.png">
+								<p style="text-align: center;">경기가 매칭된 두 구단의 선수 능력치와 최근 경기력 등의 데이터를<br>
+									Input Data로 사용하여 경기 시나리오를 예측합니다.<br></p>
+								<img src="/icon/Arrow.png">
+								<p></p>
+								<img src="/icon/Mocap.png">
+								<p style="text-align: center;">경기 예측 시나리오는 모션캡처 장비를 착용한 스턴트 팀에 전달합니다.<br>
+									스턴트 팀은 시나리오 기반의 축구 경기 애니메이션을 생성합니다.<br></p>
+								<img src="/icon/Arrow.png">
+								<p></p>
+								<img src="/icon/Setup.png">
+								<p style="text-align: center;">AI가 예측한 시나리오 결과에 벗어나지 않는 선에서<br>
+									모션 데이터를 일부 조절하여 극적인 상황을 연출해 최종 결과물을 제작합니다.<br>
+									(공의 회전률 등)<br></p>
+								<img src="/icon/Arrow.png">
+								<p></p>
+								<img src="/icon/Time.png">
+								<p style="text-align: center;">사전에 공지된 날짜와 시간에 맞추어<br>
+									최종 축구 경기 애니메이션이 메타버스 환경에서 재생됩니다.<br></p>
+								<img src="/icon/Cross-Arrow.png">
+								<div class="row aln-center">
+									<div class="column">
+										<img src="/icon/Youtube.png">
+										<p style="text-align: center;">유튜브나 트위치 등의 OTT 플랫폼에서<br>
+											스트리머가 방송하는 중계 구도 화면으로<br>
+											경기를 시청할 수 있습니다.<br></p>
+									</div>
+									<div class="column">
+										<img src="/icon/VR_Monitor.png">
+										<p style="text-align: center;">현장감을 느끼며 경기를 직관하길 원한다면<br>
+											VR기기 혹은 일반 모니터를 통해 메타버스 환경에서<br>
+											주변인과 소통하며 경기를 시청할 수 있습니다.<br></p>
+									</div>
+								</div>
+
+							</div>
+					</div>
+				</section>
+
+				<!-- Q&A -->
+				<section id="footer">
+					<div id="005" class="container">
+						<h5> Q&A</h5>
+						<details>
+							<summary style="cursor:pointer"><U>VL 게임에 대한 요약을 부탁드립니다.</U></summary>
+							<p>1. 여러분 누구나 각자의 캐릭터를 만들고 PvP / 퀘스트 / 시나리오 등을 통해 축구 선수로서의 능력치를 키울 수 있습니다.<br>
+								2. PvP를 위해 이적시장에서 다른 플레이어의 캐릭터를 영입해 팀을 꾸릴 수 있습니다. 반대로 여러분 캐릭터의 능력치가 높아, 많은 플레이어에 영입된다면  여러분의 캐릭터는 스타성을 가질 수 있습니다. <br>
+								3. 현실 세계의 기업은 <strong>Virtual League</strong>라는 가상 세계에서 구단을 운영할 수 있습니다. 이들은 이적시장을 탐색하며 좋은 능력치를 지닌 축구 선수를 영입합니다.
+								계약을 통해 VL에 입단한 선수는 경기에 출전할 수 있는 특권이 주어집니다.<br>
+								4. 현실의 축구 경기 로그 및 데이터 또는 축구 게임 로그를 기반으로 축구 경기의 흐름을 학습한 AI가 VL의 두 구단 간 축구 경기가 펼쳐질 때의 시나리오를 예측하고
+								이 시나리오를 토대로 축구 3D 애니메이션이 제작됩니다.<br>
+								5. 위에서 제작된 축구 경기는 사전에 안내된 시간의 메타버스 공간에서 공개되며 재생됩니다. VR 기기 혹은 일반 모니터를 통해 메타버스 환경에 직접 접속하여 경기를 관람할 수 있으며
+								OTT 플랫폼에서 경기 중계 구도로 송출되는 영상을 통해 경기를 시청할 수 있습니다.<br>
+								6. 구단 입단에 성공한 캐릭터의 소유자는 소속감을 가질 수 있으며 많은 관중 속에서 자신이 육성한 캐릭터를 과시할 수 있습니다.
+
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>왜 현실의 기업이 가상 구단을 창단 및 운영할 것이라고 생각하나요?</U></summary>
+							<p>기업이 가상 구단을 운영하는 것으로 현실의 수익을 창출할 수 있기 때문입니다. 이적시장에서 좋은 선수를 영입하고 높은 순위권을 유지하며 구단 SNS 등을 운영한다면, 팬층 및 서포터 확보를 통해 기업 브랜드 홍보 및 이미지 상승 효과를 기대할 수 있습니다. 또한 구단에서 기존에 보유하고 있는 선수를 타구단에 판매 시 이적료로 수익을 창출할 수 있으며 의류 및 메인 스폰서 계약 등으로 메타버스 내 단독적인 수익 창출 또한 가능합니다.
+								가상 구단이라는 특징으로 인해, 실제 구단 대비 매우 저렴한 가격으로 구단 창단 혹은 인수가 가능합니다. 이는 현실에서 스포츠 구단을 인수하고 싶으나 막대한 비용이 부담되던 기업에게 매력적으로 다가갈 수 있습니다.<br>
+								즉, 실체가 없는 가상의 스포츠 구단이지만 현실의 구단과 유사한 수익 구조를 형성하고 수익을 창출할 수 있습니다.
+								</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>실제 축구 경기를 보는 것에 비해 어떤 매력 포인트가 있나요?</U></summary>
+							<p>화려하고 극적인 플레이를 볼 수 있으며 자신 혹은 주변인이 꿈꾸었던 축구 선수의 모습을 볼 수 있습니다. 메타버스 환경에서 가족 또는 친구 등 주변인과 소통하며 경기를 집에서 직관할 수 있다는 것 또한 매력 포인트라고 생각합니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>장시간 VR기기 착용 시 멀미의 부작용 이슈가 있는데, 이에 대한 해결법은 무엇인가요?</U></summary>
+							<p>기술적인 해결법을 고안하지는 않았습니다. 하지만 실제 축구 규칙을 변형하는 방법을 몰색 중 입니다. 
+								예를 들어, 전후반 플레이 시간을 각각 20분으로 변경하거나 전후반 총 2라운드 방식이 아닌, 3 ~ 4 라운드 방식으로 변경하는 등 VR 착용자의 충분한 휴식을 위한 다양한 방법을 유연하게 생각하고 있습니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>선수 경험 인증 시 해당 포지션에 가산점이 있다고 했는데, 경험에 대한 진위여부 판별은 어떻게 하나요?</U></summary>
+							<p>먼저 선수 생활 인증서 등으로 1차적인 판별을 진행할 것입니다. 
+								이후 VL 입단 시, 관련 기관에 확인절차를 거쳐 추가적인 판별을 할 것입니다. 
+								만일 거짓된 내용일 시, VL 입단 취소 및 계정 명의 패널티 등을 고려하고 있습니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>AI를 통해 두 구단 간의 경기를 예측한다고 했는데, 공정성을 어떻게 평가할 수 있나요?</U></summary>
+							<p>자체 제작한 AI NLP 모델을 구단주 기업에 공개하여 공정성 및 경기 결과 예측에 대한 동의를 사전에 받음으로서 대중들에게 공정성을 인증받을 것입니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>이 게임을 제작 및 개발한 회사는 어떻게 돈을 벌 수 있나요?</U></summary>
+							<p>가상 세계 VL 내에서 구단주 기업이 얻는 모든 수익에 대한 수수료형 수익으로 돈을 벌 수 있습니다. 
+								뿐만 아니라, VL 경기를 직관하기 위해 메타버스 내 스타디움으로 이동하는 과정에서 대중에게 노출되는 3D 에셋 노출(간판 광고, 출시 예정 차량 모델 배치)을 사용할 수 있으며 
+								스타디움 전광판 광고, 경기 관람 유료화 (VR / PC 메타버스 경기장 입장권, 방송 송출 스트리머 중계권료) 등을 통해 수익을 창출할 수 있습니다.<br>
+								가장 메인이 되는 BM은 '현실 세계의 기업을 VL 메타버스에 흡수시켜 자체 경제 생태계를 활성화'하는 것입니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>플레이어 입장에서 과금 요소는 어떠한 것들이 있나요?</U></summary>
+							<p>VL의 BM target은 플레이어가 아닌, VL 내 구단을 운영하는 구단주 기업입니다. VL은 전세계의 모든 플레이어가 선수로 등록될 수 있어,
+								한정되지 않는 수많은 축구 선수가 생성될 수 있다는 특징이 있습니다.
+								따라서 다른 축구 게임과는 달리, 시즌 선수팩을 남발하여 기존의 시즌을 무효화하는 구조가 아닙니다. 여러분은 PvP모드를 위해 자신만의 팀을 꾸릴 때,
+								시즌팩에 대한 과금 걱정 및 새로운 시즌팩 출시로 인한 기존 시즌 무력화 등의 걱정은 하지 않으셔도 됩니다. 플레이어 입장에서의 과금 요소는
+								현재로서 Virtual League 경기(VR / PC) 입장권 정도로만 생각하고 있습니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>이 게임의 확장 콘텐츠는 무엇인가요?</U></summary>
+							<p>각 구단 일부 선수의 스토리를 담은 시네마틱 영상을 제작하여 VL 세계관 이해도 상승을 기대하고 흥미를 부여할 수 있습니다. 
+								각 구단주 기업은 현실에는 존재하지 않는 가상의 스타디움(수중 스타디움 등) 또는 특정 지역 특화 배경의 스타디움을 제작하여 VL 경기를 시청하러 온 플레이어들의 마음을 사로잡을 수 있습니다. 
+								대륙별 혹은 나라별 VL를 개설하여 글로벌 시장 진출이 가능하며 이를 통해 구단주 기업 참여 확대 및 대륙/국가 간 선수 트레이드 범위 확대를 기대할 수 있습니다. 
+								마지막으로 메타버스 경기 관람 시 미니게임(파도타기, 응원가출력, 현장 관람객 경품 추첨) 등을 기획할 수 있습니다.
+							</p>
+							<img src="cinematic.png" width="35%">
+							<p>[사진] 현실에서 프로 선수 데뷔를 꿈꾸었지만, 부상으로 꿈을 이루지 못하고<br><strong>Virtual League</strong>에서 그 꿈을 대신 이룬 가상 인물의 스토리를 담은 시네마틱 영상 중 일부</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>메인 홈페이지 영상과 갤러리에서 볼 수 있는 광장은 무엇인가요?</U></summary>
+							<p>VL 경기를 시청하기 위해 메타버스 환경에 접속하면 경기장 인근에 위치한 광장에 스폰됩니다. 여러분은 광장에서 스타디움으로 이동하며 다양한 볼거리를 즐길 수 있습니다.
+								가상 세계 속 광장에 위치한 치킨 매장을 통해 주문하면 할인을 적용받을 수 있으며, 현실에서 배달이 되어 경기를 시청하며 치킨을 뜯을 수 있습니다.
+								또한 스타디움 인근에 배치된 유명 자동차 브랜드의 출시 예정 모델을 볼 수 있을 것입니다.
+							</p>
+							<img src="images/N_VL007.png" width="45%">
+							<p>[사진] 스타디움 인근의 광장, VL 경기를 시청하기 위해 메타버스에 접속한 플레이어는 이곳에 스폰된다.</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>Virtual League를 위해 어떤 노력을 해왔나요?</U></summary>
+							<p>스타트업을 창업하여 직접 제작에 도전했습니다. 창업한 회사에서 3D 아트 그리고 AI R&D에 모두 관여 및 총괄하였으며 투자유치를 위해 정부지원사업과 엑셀러레이팅 등에 도전하기도 하였습니다.
+								또한 투자자에게 아이템을 소개하기 위해 Unreal Engine 4와 Faceware를 사용해 트레일러 영상을 제작하기도 하였습니다. 시간이 지날수록 인력과 자금에 한계를 느꼈으며
+								이 문제를 스스로가 해결할 능력이 부족함을 깨닫고 회사를 정리하였습니다.
+								하지만 Virtual League에 대한 확신과 미련이 남아, 기획서를 가지고 자금과 인력을 갖춘 게임 개발사에 직접 들어가고자 다짐하였습니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>NFT 관련 콘텐츠는 어떠한 것들이 있나요?</U></summary>
+							<p>게이머가 육성한 선수 캐릭터에 NFT와 블록체인을 적용시켜 VL 입성 이후 타구단에 이적 시, 게이머가 수익을 창출할 수 있는 P2E(Play To Earn, 돈을 벌 수 있는 게임) 콘텐츠를 구상 중입니다.
+								아직 제 스스로가 NFT를 완벽하게 공부한 것은 아니지만 Virtual League는 게이머 개인의 캐릭터 데이터와 이적시장으로 NFT를 통한 P2E 콘텐츠의 가능성이 충분한 게임이라고 생각합니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>게임 회사에서 오퍼가 온다면 어떤 직무를 원하나요?</U></summary>
+							<p>만일 게임 회사에서 저와 함께 Virtual League를 만들자는 제의가 온다면, VL의 콘텐츠 디자이너로 일하고 싶습니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>현재는 무슨 일을 하고 있나요?</U></summary>
+							<p>대학교 졸업을 준비하고 있으며 2021년 여름, 창업한 회사를 정리한 뒤 VL의 기획서를 들고 여러 게임 회사에 지원하여 면접을 보러 다니고 있습니다.
+							</p>
+						</details>
+						<details>
+							<summary style="cursor:pointer"><U>만일 좋은 소식이 없다면 어떻게 할건가요?</U></summary>
+							<p>우선적으로 게임 회사에 지원할 것이며 최종 합격한 게임 회사가 있다면, 그곳에서 VL이 아닌 다른 게임을 만들며 경험과 기획력을 쌓고 시야를 넓혀 
+								더욱 완성도있는 VL를 회사에 제시할 것입니다.<br>
+							</p>
+						</details>
+					</div>
+				</section>
+
+				<!-- Goal -->
+				<section id="footer">
+					<div id="006" class="container">
+						<h5> GOAL</h5>
+						<p>저는 제가 기획한 <strong>Virtual League</strong>라는 게임으로, 단순히 게이머들에게 재미를 주는 것뿐만 아니라 축구에 새로운 문화를 형성하고 싶습니다.<br>
+							현실에서 이루지 못했던 꿈을 메타버스에서 이루어 대리 만족감을 느끼며 VL에 입단하여 소속감을 가질 수 있는 그러한 문화를 말입니다.<br><br>
+							또한 기존 게임의 BM과는 달리, 게이머로부터 수익을 창출하는 것이 아닌 현실의 기업을 가상 세계로 흡수시켜 경제 생태계를 활성화하고<br>
+							경제 생태계의 수수료형 수익으로 수익을 창출하는 새로운 BM을 성공시키고 싶습니다.<br><br>
+							매주 주말, Virtual League를 보기 위해 온가족이 거실에 모여 치킨을 뜯으며 가상의 경기를 시청하고<br>실체가 없는 가상의 팀을 응원하는 새로운 문화를 그려봅니다.<br><br>
+							VL 기획서를 가지고 다니며 많은 게임 회사에 지원했고 여러 번 면접을 볼 수 있었습니다.<br>
+							하지만 그들은 VL에 관심이 없어 보였으며, VL에 대한 질문은 받아볼 수 없었습니다.<br><br>
+							FPS, MMORPG 등의 게임 개발 부서와 일 할 기회가 있었지만, 면접을 보러 다니며 스스로가 단순히 게임을 만들고 싶은 것이 아닌,<br>
+							내가 기획한 Virtual League를 만들고 싶다는 것을 깨달았습니다. 따라서 세상에 대한 마지막 도전으로, 이러한 사이트를 만들었습니다.<br><br>
+							저와 함께 Virtual League를 만들어 세상을 뒤흔들 회사를 찾습니다.<br></p>
+					</div>
+				</section>
+
+				<!-- WhoamI -->
+				<section id="footer">
+					<div id="007" class="container">
+						<h5> ABOUT ME</h5>
+						<details>
+							<summary style="cursor:pointer">EDUCATION</summary>
+							<pre>2016.03 - 2022.02 		수원대학교 정보보호학과<br></pre>
+						</details>
+						<p><br></p>
+						<details>
+							<summary style="cursor:pointer">WORK EXPERIENCE</summary>
+							<pre>2020.10 - 2021.07 		텅빈스튜디오		창업자 및 CEO<br></pre>
+						</details>
+						<p><br></p>
+						<details>
+							<summary style="cursor:pointer">AWARDS</summary>
+							<pre>2021					<strong>[도전 K-스타트업 2021] 예하리그 [학생창업유망팀 300]</strong></pre>
+							<pre>						교육부장관 인증서</pre>
+							<pre><br>2020					<strong>한이음 ICT 공모전</strong></pre>
+							<pre>						입선상 한국정보산업연합회 회장상</pre>
+							<pre><br>2019					<strong>국회도서관 해커톤 : 개방형클라우드 PaaS-Ta 기반 서비스 개발 공모전</strong></pre>
+							<pre>						금상 과학기술정보통신부 장관상</pre>
+							<pre><br>2019					<strong>수원대학교 창업경진대회</strong></pre>
+							<pre>						장려상 수원대학교 총장상</pre>
+						</details>
+						<p><br></p>
+						<details>
+							<summary style="cursor:pointer">PROJECTS</summary>
+							<pre>2021			 		<strong>텅빈스튜디오</strong></pre>
+							<pre>						Virtual League 게임 개발 프로젝트 (AI R&D, 개발, 3D, 사업 등 총괄 / 기여도 95%)</pre>
+							<pre><br>2020			 		<strong>텅빈스튜디오</strong></pre>
+							<pre>						버추얼 프로덕션 미디어 개발 프로젝트 (AI R&D, 개발, 3D, 사업 등 총괄 / 기여도 95%)</pre>
+							<pre><br>2020			 		<strong>개인 프로젝트</strong></pre>
+							<pre>						DGA 기반 악성 도메인 탐지 솔루션 (빅데이터 분석, N-gram, Python / 기여도 70%)</pre>
+							<pre><br>2020			 		<strong>한이음 ICT 공모전</strong></pre>
+							<pre>						사회적 약자를 위한 스마트 CCTV (Pose Estimate 개발, Python, 3D / 기여도 30%)</pre>
+							<pre><br>2019			 		<strong>국회도서관 해커톤</strong></pre>
+							<pre>						국가 전력 소비 절감 솔루션 (Python, MySQL, Ardunio / 기여도 20%)</pre>
+							<pre><br>2019			 		<strong>개인 프로젝트</strong></pre>
+							<pre>						교육 목적의 메모리 해킹 훈련 프로그램 (C# / 기여도 100%)</pre>
+						</details>
+						<p><br></p>
+						<details>
+							<summary style="cursor:pointer">USED TOOLS</summary>
+							<pre>프로그래밍 			Python / C / C#									Beginner Level<br></pre>
+							<pre>엔진, 3D				Blender / UE4 / Sketch Up / Twin Motion		Beginner Level<br></pre>
+							<pre>기타 					illustrator / After Effect							Beginner Level<br></pre>
+						</details>
+						<p><br></p>
+						<details>
+							<summary style="cursor:pointer">COMPLETE COURSE & ETC</summary>
+							<pre>2020	 				선일중학교 다문화가정 코딩교육 재능기부<br></pre>
+							<pre>2019	 				Privacy Enhancement Reward Bootcamp					NAVER<br></pre>
+							<pre>2019	 				오픈소스 도구를 활용한 PC 악성코드 분석				중부정보보호지원센터<br></pre>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div id= "008" class="container">
+						<header>
+							<!-- <h2>Questions or comments? <strong>Get in touch:</strong></h2> -->
+							<!-- <h2>CONTACT</h2> -->
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<h2>CONTACT</h2>
+									<form method="post" action="https://formspree.io/f/xpzbzlba">
+										<div class="row gtr-50">
+											<div class="col-6 col-12-small">
+												<input name="name" placeholder="Name" type="text" />
+											</div>
+											<div class="col-6 col-12-small">
+												<input name="email" placeholder="Email" type="text" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message"></textarea>
+											</div>
+											<div class="col-12">
+												<button type="submit" class="form-button-submit button icon solid fa-envelope">Send Message</button>
+											</div>
+										</div>
+									</form>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section>
+									<h2>TRAILER</h2>
+									<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/zLaqaIlFj1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+									
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li><a href="https://www.instagram.com/Virtual__League/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></li>
+							<li>&copy; 2021. VIRTUALLEAGUE all rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

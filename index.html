@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+  <meta name="viewport" charset="utf-8">
+  <meta property="og:url" content="https://virtualleague.github.io/">
+  <meta property="og:title" content="Virtual League">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/N_VL009.png">
+  <meta property="og:description" content="차세대 축구게임 프로젝트 VL">
+    <link rel="icon" href="icon.ico">
+
+    <title>VIRTUAL LEAGUE</title>
+
+    <style>
+       body { padding: 50px; margin: 0px; }
+      .jb-box { width: 100%; height: 1000px; overflow: hidden; margin: 0px auto; position: relative; }
+      video {width: auto; height: 100%; position: absolute; object-fit: contain;}
+      .jb-box  .jb-text { position: absolute; top: 50%; width: 100%; }
+      .jb-box  .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+        @FONT-FACE {
+            font-family: 'Versa';
+            src: url('Versa-Versa.woff') format('woff');
+        }
+    </style>
+  </head>
+  <body bgcolor="262626">
+    <div class="jb-box">
+      <video muted autoplay loop playsinline>
+        <source src="res.mp4" type="video/mp4">
+        <strong>Your browser does not support the video tag.</strong>
+      </video>
+      <div class="jb-text">
+        <center>
+            <p style="font-family: Versa; font-size:100px; margin: auto;">VIRTUAL LEAGUE</p>
+            <button id="Kor_btn" style="font-size: 40px; background-color: transparent; color: white; 
+              border-color: white; margin: 0 auto;"  onclick="location.href='Kor.html';">Korean</button>
+            <button id="Eng_btn" style="font-size: 40px; background-color: transparent; color: white; 
+              border-color: white; margin: 0 auto;"  onclick="location.href='Eng.html';">English</button>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>
