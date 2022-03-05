@@ -1,3 +1,4 @@
+# 게임 홍보용 웹사이트 개발 프로젝트
 <p align="center">
 <img width=80% src="https://user-images.githubusercontent.com/48519031/156892330-79f7c75f-0987-41d5-ae62-a62bc85e27a0.gif"/>
 </p>
